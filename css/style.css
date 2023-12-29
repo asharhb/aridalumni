@@ -68,6 +68,12 @@ a:focus {
   }
 }
 
+/* @media screen and (min-width: 1024px) {
+  .my-account-nav {
+    display: none;
+  }
+} */
+
 .back-to-top {
   position: fixed;
   display: none;
