@@ -59,6 +59,15 @@ a:focus {
   max-width: 1366px;
 }
 
+@media (min-width: 420px) {
+  .navbar .navbar-brand span {
+    font-size: 35px;
+  }
+  .navbar .container-fluid .navbar-brand {
+    font-size: 35px;
+  }
+}
+
 .back-to-top {
   position: fixed;
   display: none;

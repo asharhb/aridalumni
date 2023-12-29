@@ -83,10 +83,10 @@
     <div class="page-header mb-0">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12" data-aos="fade-down">
             <h2>Registration</h2>
           </div>
-          <div class="col-12">
+          <div class="col-12" data-aos="fade-right">
             <a href="">Home</a>
             <a href="">Student-Form</a>
           </div>
@@ -98,10 +98,10 @@
     <!-- Form-Start -->
     <section class="sec-std-form">
       <div class="wrapper">
-        <div class="title">Student Registration Form</div>
+        <div class="title" data-aos="flip-right">Student Registration Form</div>
         <form action="POST" data-netlify="true">
           <div class="form">
-            <div class="inputfield">
+            <div class="inputfield" data-aos="fade-right">
               <label>Full Name</label>
               <input
                 type="text"
@@ -116,7 +116,7 @@
               />
             </div>
 
-            <div class="inputfield">
+            <div class="inputfield" data-aos="fade-right">
               <label>Registration No.</label>
               <input
                 type="text"
@@ -129,7 +129,7 @@
                 required
               />
             </div>
-            <div class="inputfield">
+            <div class="inputfield" data-aos="fade-right">
               <label>CNIC No.</label>
               <input
                 type="text"
@@ -144,7 +144,7 @@
               />
             </div>
 
-            <div class="inputfield">
+            <div class="inputfield" data-aos="fade-right">
               <label>Email Address</label>
               <input
                 type="email"
@@ -156,7 +156,7 @@
               />
             </div>
 
-            <div class="inputfield">
+            <div class="inputfield" data-aos="fade-right">
               <label for="">Phone Number</label>
               <input
                 type="tel"
@@ -170,7 +170,7 @@
               />
             </div>
 
-            <div class="inputfield">
+            <div class="inputfield" data-aos="fade-right">
               <label>Session</label>
               <div class="custom_select">
                 <select id="state" name="state" required>
@@ -189,7 +189,7 @@
               </div>
             </div>
 
-            <div class="inputfield" id="gender">
+            <div class="inputfield" id="gender" data-aos="fade-right">
               <label for="">Gender</label>
               <input type="radio" name="gender" id="radio" value="Male" />Male
               <input
@@ -200,7 +200,7 @@
               />Female
             </div>
 
-            <div class="inputfield">
+            <div class="inputfield" data-aos="fade-right">
               <label>Password</label>
               <input
                 type="password"
@@ -218,7 +218,7 @@
               />
             </div>
 
-            <div class="inputfield">
+            <div class="inputfield" data-aos="fade-right">
               <label>Confirm Password</label>
               <input
                 type="password"
@@ -236,7 +236,7 @@
               />
             </div>
 
-            <div class="inputfield">
+            <div class="inputfield" data-aos="fade-right">
               <label>Upload CNIC / Student Card</label>
               <!-- <p id="file-size">* Max size 100kb.</p> -->
               <input
@@ -250,7 +250,7 @@
               />
             </div>
 
-            <div class="inputfield terms">
+            <div class="inputfield terms" data-aos="fade-up">
               <label class="check">
                 <input type="checkbox" name="check" value="Declared" required />
                 <span class="checkmark"></span>
@@ -260,11 +260,11 @@
               </p>
             </div>
 
-            <div class="inputfield" required>
+            <div class="inputfield" required data-aos="fade-up">
               <div data-netlify-recaptcha="true"></div>
             </div>
 
-            <div class="inputfield btns" id="btn">
+            <div class="inputfield btns" id="btn" data-aos="fade-up">
               <button
                 type="submit"
                 value="Register"
@@ -273,7 +273,14 @@
               >
                 Register
               </button>
-              <button type="reset" value="Reset" class="btn">Reset</button>
+              <button
+                type="reset"
+                value="Reset"
+                class="btn"
+                data-aos="fade-up"
+              >
+                Reset
+              </button>
             </div>
           </div>
         </form>
