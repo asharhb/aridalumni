@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Arid Alumni | Student-Form</title>
+    <title>Arid Alumni | Job Apply</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
@@ -54,12 +54,12 @@
               >Success Stories</a
             >
             <a href="discussion.html" class="nav-item nav-link">Discussions</a>
-            <a href="jobs.html" class="nav-item nav-link">Jobs</a>
+            <a href="jobs.html" class="nav-item nav-link active">Jobs</a>
 
             <div class="nav-item dropdown">
               <a
                 href=""
-                class="nav-link dropdown-toggle active"
+                class="nav-link dropdown-toggle"
                 data-toggle="dropdown"
                 >Register</a
               >
@@ -84,11 +84,11 @@
       <div class="container">
         <div class="row">
           <div class="col-12" data-aos="fade-down">
-            <h2>Registration</h2>
+            <h2>Job Apply</h2>
           </div>
           <div class="col-12" data-aos="fade-right">
             <a href="">Home</a>
-            <a href="">Student-Form</a>
+            <a href="">Job Apply</a>
           </div>
         </div>
       </div>
@@ -98,11 +98,11 @@
     <!-- Form-Start -->
     <section class="sec-std-form">
       <div class="wrapper">
-        <div class="title" data-aos="flip-right">Student Registration Form</div>
+        <div class="title" data-aos="flip-right">Job Apply Form</div>
         <form action="POST" data-netlify="true">
           <div class="form">
             <div class="inputfield" data-aos="fade-right">
-              <label>Full Name</label>
+              <label>Candidate Name</label>
               <input
                 type="text"
                 class="input"
@@ -111,33 +111,6 @@
                 placeholder="Enter Full Name"
                 maxlength="30"
                 title="Enter only alphabets"
-                required
-              />
-            </div>
-
-            <div class="inputfield" data-aos="fade-right">
-              <label>Registration No.</label>
-              <input
-                type="text"
-                class="input"
-                id="name"
-                name="lname"
-                placeholder="Enter Registration No."
-                maxlength="20"
-                title="Enter Registration No."
-                required
-              />
-            </div>
-            <div class="inputfield" data-aos="fade-right">
-              <label>CNIC No.</label>
-              <input
-                type="text"
-                class="input"
-                id="name"
-                name="lname"
-                placeholder="Enter CNIC No."
-                maxlength="20"
-                title="Enter only numbers"
                 required
               />
             </div>
@@ -154,7 +127,7 @@
             </div>
 
             <div class="inputfield" data-aos="fade-right">
-              <label for="">Phone Number</label>
+              <label for="">Contact No.</label>
               <input
                 type="tel"
                 class="input"
@@ -162,28 +135,23 @@
                 maxlength="15"
                 required
                 id="phone-number"
-                placeholder="Enter phone number"
+                placeholder="Enter Contact No."
                 title="Please enter valid phone number"
               />
             </div>
 
             <div class="inputfield" data-aos="fade-right">
-              <label>Session</label>
-              <div class="custom_select">
-                <select id="state" name="state" required>
-                  <option value="">Select Session</option>
-                  <option>2014-2018</option>
-                  <option>2015-2019</option>
-                  <option>2016-2020</option>
-                  <option>2017-2021</option>
-                  <option>2018-2022</option>
-                  <option>2019-2023</option>
-                  <option>2020-2024</option>
-                  <option>2021-2025</option>
-                  <option>2022-2026</option>
-                  <option>2023-2027</option>
-                </select>
-              </div>
+              <label>Cover Letter</label>
+              <input
+                type="text"
+                class="input"
+                id="name"
+                name="fname"
+                placeholder="Please consider my application..."
+                maxlength="100"
+                title="Enter only alphabets"
+                required
+              />
             </div>
 
             <div class="inputfield" id="gender" data-aos="fade-right">
@@ -198,41 +166,7 @@
             </div>
 
             <div class="inputfield" data-aos="fade-right">
-              <label>Password</label>
-              <input
-                type="password"
-                class="input"
-                id="password"
-                name=""
-                placeholder="Enter password min 8 characters"
-                autocomplete="off"
-                onkeyup="check()"
-                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                maxlength="100"
-                minlength="8"
-                required
-              />
-            </div>
-
-            <div class="inputfield" data-aos="fade-right">
-              <label>Confirm Password</label>
-              <input
-                type="password"
-                onkeyup="check()"
-                class="input"
-                id="confirm-password"
-                name=""
-                placeholder="Confirm password"
-                autocomplete="off"
-                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                maxlength="100"
-                minlength="8"
-                required
-              />
-            </div>
-
-            <div class="inputfield" data-aos="fade-right">
-              <label>Upload CNIC / Student Card</label>
+              <label>Upload Resume</label>
               <!-- <p id="file-size">* Max size 100kb.</p> -->
               <input
                 type="file"
@@ -245,16 +179,6 @@
               />
             </div>
 
-            <div class="inputfield terms" data-aos="fade-up">
-              <label class="check">
-                <input type="checkbox" name="check" value="Declared" required />
-                <span class="checkmark"></span>
-              </label>
-              <p>
-                I hereby declare that the above information provided is correct.
-              </p>
-            </div>
-
             <div class="inputfield btns" id="btn" data-aos="fade-up">
               <button
                 type="submit"
@@ -262,14 +186,9 @@
                 class="btn"
                 onclick="checkPassword()"
               >
-                Register
+                Apply
               </button>
-              <button
-                type="reset"
-                value="Reset"
-                class="btn"
-                data-aos="fade-up"
-              >
+              <button type="reset" value="Reset" class="btn" data-aos="fade-up">
                 Reset
               </button>
             </div>

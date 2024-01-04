@@ -55,10 +55,10 @@
             >
             <a href="discussion.html" class="nav-item nav-link">Discussions</a>
             <a href="jobs.html" class="nav-item nav-link">Jobs</a>
-            <a href="" class="nav-item nav-link">Login</a>
+     
             <div class="nav-item dropdown">
               <a
-                href="#"
+                href=""
                 class="nav-link dropdown-toggle active"
                 data-toggle="dropdown"
                 >Register</a
@@ -112,7 +112,6 @@
                 name="fname"
                 placeholder="Enter Full Name"
                 maxlength="30"
-                pattern="[A-Za-z]{1,32}"
                 title="Enter only alphabets"
                 required
               />
@@ -140,7 +139,6 @@
                 name="lname"
                 placeholder="Enter CNIC No."
                 maxlength="20"
-                pattern="[A-Za-z]{1,32}"
                 title="Enter only numbers"
                 required
               />
@@ -153,7 +151,6 @@
                 class="input"
                 name="email"
                 placeholder="Enter your email"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"
                 required
               />
             </div>
@@ -234,7 +231,6 @@
                 name="fname"
                 placeholder="Enter Current Employement Status"
                 maxlength="30"
-                pattern="[A-Za-z]{1,32}"
                 title="Enter only alphabets"
                 required
               />
@@ -249,7 +245,6 @@
                 name="fname"
                 placeholder="Enter Designation (If Employed)"
                 maxlength="30"
-                pattern="[A-Za-z]{1,32}"
                 title="Enter only alphabets"
                 required
               />
@@ -264,7 +259,6 @@
                 name="fname"
                 placeholder="Enter Organization Name"
                 maxlength="30"
-                pattern="[A-Za-z]{1,32}"
                 title="Enter only alphabets"
                 required
               />
@@ -277,7 +271,6 @@
                 class="input"
                 name="email"
                 placeholder="Enter Office Email"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"
                 required
               />
             </div>
@@ -317,7 +310,6 @@
                 placeholder="Enter password min 8 characters"
                 autocomplete="off"
                 onkeyup="check()"
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
                 maxlength="100"
                 minlength="8"
@@ -335,7 +327,6 @@
                 name=""
                 placeholder="Confirm password"
                 autocomplete="off"
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
                 maxlength="100"
                 minlength="8"
@@ -365,10 +356,6 @@
               <p>
                 I hereby declare that the above information provided is correct.
               </p>
-            </div>
-
-            <div class="inputfield" required data-aos="fade-right">
-              <div data-netlify-recaptcha="true"></div>
             </div>
 
             <div class="inputfield btns" id="btn" data-aos="fade-right">

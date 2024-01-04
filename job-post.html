@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Arid Alumni | Alumni-Form</title>
+    <title>Arid Alumni | Job Post</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
@@ -54,12 +54,12 @@
               >Success Stories</a
             >
             <a href="discussion.html" class="nav-item nav-link">Discussions</a>
-            <a href="jobs.html" class="nav-item nav-link">Jobs</a>
+            <a href="jobs.html" class="nav-item nav-link active">Jobs</a>
 
             <div class="nav-item dropdown">
               <a
                 href=""
-                class="nav-link dropdown-toggle active"
+                class="nav-link dropdown-toggle"
                 data-toggle="dropdown"
                 >Register</a
               >
@@ -86,11 +86,11 @@
       <div class="container">
         <div class="row">
           <div class="col-12" data-aos="fade-up">
-            <h2>Registration</h2>
+            <h2>Post Job</h2>
           </div>
           <div class="col-12" data-aos="fade-down">
             <a href="">Home</a>
-            <a href="">Alumni-Form</a>
+            <a href="">Post Job</a>
           </div>
         </div>
       </div>
@@ -100,63 +100,160 @@
     <!-- Form-Start -->
     <section class="sec-std-form">
       <div class="wrapper">
-        <div class="title" data-aos="flip-down">Alumni Registration Form</div>
+        <div class="title" data-aos="flip-down">Post Job Form</div>
         <form action="POST" data-netlify="true">
           <div class="form">
             <div class="inputfield" data-aos="fade-right">
-              <label>Full Name</label>
+              <label>Company Name</label>
               <input
                 type="text"
                 class="input"
                 id="name"
                 name="fname"
-                placeholder="Enter Full Name"
+                placeholder="Enter Company Name"
                 maxlength="30"
                 title="Enter only alphabets"
                 required
               />
             </div>
 
-            <div class="inputfield" data-aos="fade-left">
-              <label>Registration No.</label>
+            <div class="inputfield" data-aos="fade-right">
+              <label>Job Title</label>
               <input
                 type="text"
                 class="input"
                 id="name"
-                name="lname"
-                placeholder="Enter Registration No."
-                maxlength="20"
-                title="Enter Registration No."
+                name="fname"
+                placeholder="Enter Job Title"
+                maxlength="30"
+                title="Enter only alphabets"
+                required
+              />
+            </div>
+
+            <div class="inputfield" data-aos="fade-right">
+              <label>Job Location</label>
+              <input
+                type="text"
+                class="input"
+                id="name"
+                name="fname"
+                placeholder="Enter Job Location"
+                maxlength="30"
+                title="Enter only alphabets"
+                required
+              />
+            </div>
+
+            <div class="inputfield" data-aos="fade-right">
+              <label>Qualification</label>
+              <input
+                type="text"
+                class="input"
+                id="name"
+                name="fname"
+                placeholder="Enter Qualification Required"
+                maxlength="100"
+                title="Enter only alphabets and digits"
                 required
               />
             </div>
             <div class="inputfield" data-aos="fade-right">
-              <label>CNIC No.</label>
+              <label>Job Description</label>
               <input
                 type="text"
                 class="input"
                 id="name"
-                name="lname"
-                placeholder="Enter CNIC No."
-                maxlength="20"
-                title="Enter only numbers"
+                name="fname"
+                placeholder="Write Job Description of about 10-15 Words"
+                maxlength="100"
+                title="Enter only alphabets and digits"
+                required
+              />
+            </div>
+
+            <div class="inputfield" data-aos="fade-right">
+              <label>Key Skill</label>
+              <input
+                type="text"
+                class="input"
+                id="name"
+                name="fname"
+                placeholder="Enter Key Skill"
+                maxlength="100"
+                title="Enter only alphabets and digits"
+                required
+              />
+            </div>
+
+            <div class="inputfield" data-aos="fade-right">
+              <label>Package</label>
+              <input
+                type="text"
+                class="input"
+                id="name"
+                name="fname"
+                placeholder="Enter Package"
+                maxlength="100"
+                title="Enter only alphabets and digits"
+                required
+              />
+            </div>
+
+            <div class="inputfield" data-aos="fade-right">
+              <label>Experience Required</label>
+              <input
+                type="text"
+                class="input"
+                id="name"
+                name="fname"
+                placeholder="Enter Experience Required"
+                maxlength="100"
+                title="Enter only alphabets and digits"
+                required
+              />
+            </div>
+
+            <div class="inputfield" data-aos="fade-right">
+              <label>No. of Vacancy</label>
+              <input
+                type="text"
+                class="input"
+                id="name"
+                name="fname"
+                placeholder="Enter No. of Vacancy"
+                maxlength="30"
+                title="Enter only alphabets and digits"
+                required
+              />
+            </div>
+
+            <div class="inputfield" data-aos="fade-right">
+              <label>Last Date to Apply</label>
+              <input
+                type="date"
+                class="input"
+                id="name"
+                name="fname"
+                placeholder="Enter Last Date to Apply"
+                title="Select Last Date"
                 required
               />
             </div>
 
             <div class="inputfield" data-aos="fade-left">
-              <label>Email Address</label>
+              <label>Company Email</label>
               <input
                 type="email"
                 class="input"
                 name="email"
-                placeholder="Enter your email"
+                placeholder="Enter Company email"
                 required
               />
             </div>
 
-            <div class="inputfield" data-aos="fade-right">
-              <label for="">Phone Number</label>
+            <div class="inputfield" data-aos="fade-up">
+              <label for="">Company Phone No.</label>
               <input
                 type="tel"
                 class="input"
@@ -164,203 +261,10 @@
                 maxlength="15"
                 required
                 id="phone-number"
-                placeholder="Enter phone number"
-                title="Please enter valid phone number"
+                placeholder="Enter Company Phone No."
+                title="Please enter Company Phone No."
               />
             </div>
-
-            <div class="inputfield" data-aos="fade-right">
-              <label>Passout Year</label>
-              <div class="custom_select">
-                <select id="state" name="state" required>
-                  <option value="">Select Passout Year</option>
-                  <option>2018</option>
-                  <option>2019</option>
-                  <option>2020</option>
-                  <option>2021</option>
-                  <option>2022</option>
-                  <option>2023</option>
-                  <option>2024</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="inputfield" data-aos="fade-right">
-              <label>Department of Graduation</label>
-              <div class="custom_select">
-                <select id="state" name="state" required>
-                  <option value="">Select Department</option>
-                  <option>BSCS</option>
-                  <option>BSIT</option>
-                  <option>BBA</option>
-                  <option>BS-SE</option>
-                  <option>BS-HND</option>
-                  <option>BS-FST</option>
-                  <option>BS-MLT</option>
-                  <option>BBA 2 Year</option>
-                  <option>BS-Microiblology</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="inputfield" data-aos="fade-right">
-              <label>Session</label>
-              <div class="custom_select">
-                <select id="state" name="state" required>
-                  <option value="">Select Session</option>
-                  <option>2014-2018</option>
-                  <option>2015-2019</option>
-                  <option>2016-2020</option>
-                  <option>2017-2021</option>
-                  <option>2018-2022</option>
-                  <option>2019-2023</option>
-                  <option>2020-2024</option>
-                  <option>2021-2025</option>
-                  <option>2022-2026</option>
-                  <option>2023-2027</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="inputfield" data-aos="fade-up">
-              <label>Current Employement Status</label>
-              <input
-                type="text"
-                class="input"
-                id="name"
-                name="fname"
-                placeholder="Enter Current Employement Status"
-                maxlength="30"
-                title="Enter only alphabets"
-                required
-              />
-            </div>
-
-            <div class="inputfield" data-aos="fade-up">
-              <label>Designation (If Employed)</label>
-              <input
-                type="text"
-                class="input"
-                id="name"
-                name="fname"
-                placeholder="Enter Designation (If Employed)"
-                maxlength="30"
-                title="Enter only alphabets"
-                required
-              />
-            </div>
-
-            <div class="inputfield" data-aos="fade-up">
-              <label>Organization Name</label>
-              <input
-                type="text"
-                class="input"
-                id="name"
-                name="fname"
-                placeholder="Enter Organization Name"
-                maxlength="30"
-                title="Enter only alphabets"
-                required
-              />
-            </div>
-
-            <div class="inputfield" data-aos="fade-up">
-              <label>Office Email</label>
-              <input
-                type="email"
-                class="input"
-                name="email"
-                placeholder="Enter Office Email"
-                required
-              />
-            </div>
-
-            <div class="inputfield" data-aos="fade-up">
-              <label for="">Office Phone No.</label>
-              <input
-                type="tel"
-                class="input"
-                name="phone-number"
-                maxlength="15"
-                required
-                id="phone-number"
-                placeholder="Enter Office Phone No."
-                title="Please enter Office Phone No."
-              />
-            </div>
-
-            <div class="inputfield" id="gender" data-aos="fade-up">
-              <label for="">Gender</label>
-              <input type="radio" name="gender" id="radio" value="Male" />Male
-              <input
-                type="radio"
-                name="gender"
-                id="radio"
-                value="Female"
-              />Female
-            </div>
-
-            <div class="inputfield" data-aos="fade-up">
-              <label>Password</label>
-              <input
-                type="password"
-                class="input"
-                id="password"
-                name=""
-                placeholder="Enter password min 8 characters"
-                autocomplete="off"
-                onkeyup="check()"
-                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                maxlength="100"
-                minlength="8"
-                required
-              />
-            </div>
-
-            <div class="inputfield" data-aos="fade-up">
-              <label>Confirm Password</label>
-              <input
-                type="password"
-                onkeyup="check()"
-                class="input"
-                id="confirm-password"
-                name=""
-                placeholder="Confirm password"
-                autocomplete="off"
-                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                maxlength="100"
-                minlength="8"
-                required
-              />
-            </div>
-
-            <div class="inputfield" data-aos="fade-up">
-              <label>Upload CNIC / Student Card</label>
-              <!-- <p id="file-size">* Max size 100kb.</p> -->
-              <input
-                type="file"
-                name="myfile"
-                accept="image/*"
-                id="myfile"
-                placeholder="Upload your photo"
-                rows="7"
-                required
-              />
-            </div>
-
-            <div class="inputfield terms" data-aos="fade-up">
-              <label class="check">
-                <input type="checkbox" name="check" value="Declared" required />
-                <span class="checkmark"></span>
-              </label>
-              <p>
-                I hereby declare that the above information provided is correct.
-              </p>
-            </div>
-
-            <!-- <div class="inputfield" required>
-              <div data-netlify-recaptcha="true"></div>
-            </div> -->
 
             <div class="inputfield btns" id="btn" data-aos="fade-right">
               <button
@@ -369,7 +273,7 @@
                 class="btn"
                 onclick="checkPassword()"
               >
-                Register
+                Post
               </button>
               <button type="reset" value="Reset" class="btn">Reset</button>
             </div>

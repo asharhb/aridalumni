@@ -55,11 +55,11 @@
               >Success Stories</a
             >
             <a href="discussion.html" class="nav-item nav-link">Discussions</a>
-            <a href="feature.html" class="nav-item nav-link active">Jobs</a>
-            <a href="" class="nav-item nav-link">Login</a>
+            <a href="jobs.html" class="nav-item nav-link active">Jobs</a>
+
             <div class="nav-item dropdown">
               <a
-                href="#"
+                href=""
                 class="nav-link dropdown-toggle"
                 data-toggle="dropdown"
                 >Register</a
@@ -91,7 +91,10 @@
           </div>
         </div>
       </div>
-      <a class="btn custom-btn post-job-btn" data-aos="fade-up" href="#"
+      <a
+        class="btn custom-btn post-job-btn"
+        data-aos="fade-up"
+        href="job-post.html"
         >Post Job</a
       >
     </div>
@@ -109,7 +112,9 @@
               Responsible for designing, developing and maintaining software
               systems and applications.
             </div>
-            <a href="#" class="details-btn">More Details</a>
+            <a class="details-btn" data-toggle="modal" data-target="#job"
+              >More Details</a
+            >
             <span class="open-positions">4 Open Positions</span>
           </div>
 
@@ -120,7 +125,13 @@
               Responsible for designing, developing and maintaining software
               systems and applications.
             </div>
-            <a href="#" class="details-btn">More Details</a>
+            <a
+              href="#"
+              class="details-btn"
+              data-toggle="modal"
+              data-target="#job"
+              >More Details</a
+            >
             <span class="open-positions">2 Open Positions</span>
           </div>
 
@@ -131,7 +142,9 @@
               Responsible for designing, developing and maintaining software
               systems and applications.
             </div>
-            <a href="#" class="details-btn">More Details</a>
+            <a class="details-btn" data-toggle="modal" data-target="#job"
+              >More Details</a
+            >
             <span class="open-positions">4 Open Positions</span>
           </div>
 
@@ -142,7 +155,9 @@
               Responsible for designing, developing and maintaining software
               systems and applications.
             </div>
-            <a href="#" class="details-btn">More Details</a>
+            <a class="details-btn" data-toggle="modal" data-target="#job"
+              >More Details</a
+            >
             <span class="open-positions">4 Open Positions</span>
           </div>
 
@@ -153,7 +168,9 @@
               Responsible for designing, developing and maintaining software
               systems and applications.
             </div>
-            <a href="#" class="details-btn">More Details</a>
+            <a class="details-btn" data-toggle="modal" data-target="#job"
+              >More Details</a
+            >
             <span class="open-positions">3 Open Positions</span>
           </div>
 
@@ -164,13 +181,65 @@
               Responsible for designing, developing and maintaining software
               systems and applications.
             </div>
-            <a href="#" class="details-btn">More Details</a>
+            <a class="details-btn" data-toggle="modal" data-target="#job"
+              >More Details</a
+            >
             <span class="open-positions">1 Open Positions</span>
           </div>
         </div>
       </div>
     </section>
     <!-- Jobs Section End -->
+
+    <!-- Modal Start -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="job"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Job Detail</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body-job">
+            <h6>Company Name : <span>Devhub</span></h6>
+            <h6>Job Location : <span>Lahore</span></h6>
+            <h6>Qualification : <span>Graduation</span></h6>
+            <h6>Key Skill : <span>Mern Stack</span></h6>
+            <h6>Package : <span>80K</span></h6>
+            <h6>Last Date to Apply : <span>Jan 22,2024</span></h6>
+            <h6>Company Email : <span>devhubtech@gmail.com</span></h6>
+            <h6>Company Phone No. : <span>040-4462232</span></h6>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-success text-light">
+              <a class="text-light" href="job-apply.html"> Apply</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal End -->
 
     <!-- Footer Start -->
     <footer class="footer-area bg-f">
