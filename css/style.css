@@ -67,6 +67,14 @@ a:focus {
     font-size: 35px;
   }
 }
+@media (min-width: 320px) {
+  .navbar .navbar-brand span {
+    font-size: 35px;
+  }
+  .navbar .container-fluid .navbar-brand {
+    font-size: 35px;
+  }
+}
 
 /* Chevron Up Btn Start */
 .back-to-top {
@@ -506,8 +514,14 @@ a:focus {
   border: 1px solid #ffffff;
   background: transparent;
 }
+.booking .booking-form .form-control:hover {
+  border: 1px solid #719a0a;
+}
+.booking .booking-form .form-control:focus {
+  border: 1px solid #719a0a;
+}
 
-.booking .booking-form select.form-control {
+txt-area-success .booking .booking-form select.form-control {
   padding: 0 10px;
 }
 
@@ -530,6 +544,7 @@ a:focus {
   color: #fbaf32;
   background: #ffffff;
   border: 1px solid #ffffff;
+  transition: 0.3s ease;
 }
 
 .booking .booking-form .btn.custom-btn:hover {
@@ -548,7 +563,12 @@ a:focus {
   width: 100%;
   padding: 30px 0 25px 0;
   margin: 45px 0;
-  background: rgba(0, 0, 0, 0.06);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background: rgba(0, 0, 0, 0.06); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url(../img/carousel-2.jpg);
 }
 
 .food .food-item {
@@ -840,7 +860,17 @@ a:focus {
   width: 100%;
   padding: 50px 0 40px;
   margin: 45px 0;
-  background: rgba(0, 0, 0, 0.04);
+  /* background: rgba(0, 0, 0, 0.04); */
+  background-position: center;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.83),
+      rgba(255, 255, 255, 0.83)
+    ),
+    url(../img/carousel-2.jpg);
+  background-repeat: no-repeat;
+  background-size: 400% 400%;
+  animation: gradient 55s ease infinite;
 }
 
 .testimonial .testimonials-carousel {
@@ -1308,16 +1338,52 @@ textarea::placeholder {
   .modal-content .modal-body {
     padding: 60px 20px 40px !important;
   }
+
+  .modal-dialog .modal-content {
+    width: 90vw;
+    margin-left: 1rem;
+  }
+
   .modal-body-job {
     padding: 20px !important;
   }
 }
+
+@media only screen and (min-width: 320px) {
+  /* .modal-dialog {
+    width: 5% !important;
+  } */
+  .modal-content .modal-body {
+    padding: 60px 20px 40px !important;
+    margin-right: 2.5rem;
+  }
+  .modal-content .modal-body .pan {
+    margin-left: 1.2rem;
+  }
+  .modal-body-job {
+    padding: 20px !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .modal-content .modal-body {
+    padding: 60px 20px 40px !important;
+    margin-right: 2.5rem;
+  }
+  .modal-content .modal-body .pan {
+    margin-left: 1.2rem;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   /* .modal-dialog {
     width: 5% !important;
   } */
   .modal-content .modal-body {
     padding: 60px 20px 40px !important;
+    margin-right: 0;
+  }
+  .modal-content .modal-body .pan {
+    margin-left: 0;
   }
   .modal-body-job {
     padding: 20px !important;
@@ -1699,10 +1765,17 @@ textarea::placeholder {
   }
 }
 .sec-std-form {
-  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-  background: linear-gradient(-45deg, #fbaf32, #719a0a, #fbaf32, #719a0a);
+  /* background: linear-gradient(-45deg, #fbaf32, #719a0a, #fbaf32, #719a0a); */
+  background-position: center;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.83),
+      rgba(255, 255, 255, 0.83)
+    ),
+    url(../img/carousel-2.jpg);
+  background-repeat: no-repeat;
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 55s ease infinite;
 }
 .wrapper {
   max-width: 650px;
@@ -1714,7 +1787,8 @@ textarea::placeholder {
   border-radius: 1em;
   border-width: 4px;
   border-style: solid;
-  border-image: linear-gradient(to top left, #fe1e50 0%, #282881 100%) 1;
+  /* border-image: linear-gradient(to top left, #fe1e50 0%, #282881 100%) 1; */
+  border: 2px solid #006633;
 }
 
 .wrapper .title {
